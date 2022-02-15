@@ -23,6 +23,15 @@ namespace CheckoutKata.Model
         }
 
         /// <summary>
+        /// Get list of all items in basket
+        /// </summary>
+        /// <returns>All items in basket</returns>
+        public List<IItem> GetBasketItems()
+        {
+            return basketList;
+        }
+
+        /// <summary>
         /// Add item to basket list
         /// </summary>
         /// <param name="item">Item to be added</param>
@@ -53,7 +62,7 @@ namespace CheckoutKata.Model
                 totalPrice += item.GetTotalPrice();
             }
 
-            return totalPrice;
+            return Math.Round(totalPrice, 2);
         }
 
         /// <summary>
