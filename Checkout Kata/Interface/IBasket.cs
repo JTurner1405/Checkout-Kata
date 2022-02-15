@@ -18,13 +18,6 @@ namespace CheckoutKata.Interface
         void AddItem(IItem item);
 
         /// <summary>
-        /// Add item to basket list by id
-        /// </summary>
-        /// <param name="itemId">id of item to add</param>
-        /// <param name="count">quanity of item to add to basket</param>
-        void AddItem(string itemId, int count);
-
-        /// <summary>
         /// Remove item from basket list
         /// </summary>
         /// <param name="item">Item to be removed from basket</param>

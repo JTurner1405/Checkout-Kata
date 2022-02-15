@@ -13,12 +13,12 @@ namespace CheckoutKata.Model
     public class Item : IItem
     {
         //variables
-        private string Id { get; set; }
-        private int Quantity { get; set; }
-        private double Price { get; set; }
-        private int PromotionalQuantity { get; set; }
-        private double PromotionalDiscount { get; set; }
-        private double PromotionalPrice { get; set; }
+        private string Id;
+        private int Quantity;
+        private double Price;
+        private int PromotionalQuantity;
+        private double PromotionalDiscount;
+        private double PromotionalPrice;
 
         /// <summary>
         /// Constructor to create basic item with id & price
